@@ -1,0 +1,3777 @@
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper ,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+/* ANIMA screen - desktophd */
+.font-class-1 {
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 25.0px;
+  letter-spacing      : 0.25px;
+}
+.font-class-10 {
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 60.0px;
+  letter-spacing      : 0.60px;
+  line-height         : 91.0px;
+}
+.font-class-2 {
+  color               : var(--auto-palette-color-2);
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  letter-spacing      : 0.18px;
+  line-height         : 25.0px;
+}
+.font-class-3 {
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  font-size           : 30.0px;
+  letter-spacing      : 0.30px;
+}
+.font-class-4 {
+  color               : var(--auto-palette-color-1);
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  letter-spacing      : 0.24px;
+  line-height         : 32.0px;
+}
+.font-class-5 {
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  font-size           : 25.0px;
+  letter-spacing      : 0.25px;
+}
+.font-class-6 {
+  color               : var(--auto-palette-color-4);
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  letter-spacing      : 0.15px;
+  line-height         : 20.0px;
+}
+.font-class-7 {
+  color               : var(--auto-palette-color-1);
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  letter-spacing      : 0.17px;
+  line-height         : 23.0px;
+}
+.font-class-8 {
+  color               : var(--auto-palette-color-3);
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  font-size           : 40.0px;
+  letter-spacing      : 0.40px;
+  line-height         : 53.0px;
+}
+.font-class-9 {
+  color               : var(--auto-palette-color-1);
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 39.0px;
+  letter-spacing      : 0.39px;
+  line-height         : 52.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-2: rgba(254,255,254,1.0);
+  --auto-palette-color-3: rgba(96,216,254,1.0);
+  --auto-palette-color-4: rgba(144,144,144,1.0);
+  --auto-palette-color-5: rgba(78,220,254,1.0);
+  --auto-palette-color-6: rgba(18,18,18,1.0);
+  --auto-palette-color-7: rgba(0,227,255,1.0);
+  --auto-palette-color-8: rgba(44,224,255,1.0);
+}
+.desktophd .path-7zvYny {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 35px;
+  position            : absolute;
+  top                 : 4px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-RKp2dy {
+  background-color    : rgba(255,255,255,0);
+  height              : 7px;
+  left                : 38px;
+  position            : absolute;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .path-IUp0a5 {
+  background-color    : rgba(255,255,255,0);
+  height              : 4px;
+  left                : 15px;
+  position            : absolute;
+  top                 : 18px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-RB8BFO {
+  background-color    : rgba(255,255,255,0);
+  height              : 4px;
+  left                : 15px;
+  position            : absolute;
+  top                 : 23px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-a7BRxv {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 17px;
+  position            : absolute;
+  top                 : 21px;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .path-ooGp52 {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 11px;
+  position            : absolute;
+  top                 : 21px;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .a68575581-2324613904520229-1273773131172937728-o-r4hp9v {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 342px;
+  position            : absolute;
+  top                 : 2px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a64961707-1978779185560316-9205634156929744896-o-RFkLR2 {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a86649333-1776356169168417-255938363889025024-o-uovOsH {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .youssef-khedher-iZDvIs {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-5);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 258px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .full-stack-developer-qf9O6V {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 182px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .a93282362-10217458207152714-4951486363254915072-n-86xdDO {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a86703908-1485648034942561-8925786663586627584-o-eao5D7 {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a68575581-2324613904520229-1273773131172937728-o-zRNfxQ {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .logo-mn-f1ELrl {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 245px;
+  margin-left         : 233px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 231px;
+}
+.desktophd .rectangle-vP6mnd {
+  background-color    : rgba(255,255,255,0);
+  height              : 260px;
+  left                : 747px;
+  position            : absolute;
+  top                 : 1308px;
+  transform           : rotate(0deg);
+  width               : 1920px;
+}
+.desktophd .a69553946-2192830050844262-799053892049436672-o-mGZtqr {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a50502941-10156123313488652-2588841973464956928-n-MdyJFO {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a50502941-10156123313488652-2588841973464956928-n-8Oo7WK {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a101457766-2789976114570352-8267676512812007424-n-z86h4t {
+  background-color    : rgba(255,255,255,0);
+  height              : 340px;
+  left                : 686px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 340px;
+}
+.desktophd .a69553946-2192830050844262-799053892049436672-o-718pu8 {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .learn-from-our-exper-vcM3r1 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-5);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : 28.0px;
+  min-height          : 182px;
+  min-width           : 765px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-xiOAjl {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .youssef-khedher-EFC8E3 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-5);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 258px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .a22552523-1384285831717617-6110681479742342549-n-MPmD34 {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 342px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a70443595-2100521500052750-4865790469935726592-o-xOzCxm {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .a70443595-2100521500052750-4865790469935726592-o-AjNs97 {
+  background-color    : rgba(255,255,255,0);
+  height              : 342px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .rectangle-mgcOeR {
+  background-color    : rgba(255,255,255,0);
+  height              : 100px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .group-6-SFpvkp {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .java-script-developer-O1ozgo {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 190px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-izfgxr {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .maher-jaafar-8xcNbu {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 216px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .senior-mobile-develo-DRkBYq {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 222px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-x0fVAU {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .melissa-sassi-xHg1NH {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 191px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .senior-program-manag-OJNulR {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 226px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .path-FNFvPs {
+  background-color    : rgba(255,255,255,0);
+  height              : 7px;
+  left                : 44px;
+  position            : absolute;
+  top                 : 22px;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .path-8Wnybq {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 12px;
+  position            : absolute;
+  top                 : 14px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-odw9CE {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 17px;
+  position            : absolute;
+  top                 : 14px;
+  transform           : rotate(0deg);
+  width               : 8px;
+}
+.desktophd .path-GFbmuO {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 21px;
+  position            : absolute;
+  top                 : 34px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.desktophd .interview-2-ihgeZG {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 60px;
+  justify-content     : flex-start;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .shape-QbmYCT {
+  background-color    : rgba(255,255,255,0);
+  height              : 60px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 47px;
+}
+.desktophd .path-HCnMsk {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 43px;
+  position            : absolute;
+  top                 : 53px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-4WZKCP {
+  background-color    : rgba(255,255,255,0);
+  height              : 4px;
+  left                : 9px;
+  position            : absolute;
+  top                 : 4px;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .path-VnsIEJ {
+  background-color    : rgba(255,255,255,0);
+  height              : 15px;
+  left                : 6px;
+  position            : absolute;
+  top                 : 39px;
+  transform           : rotate(0deg);
+  width               : 42px;
+}
+.desktophd .path-vxYbRA {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 6px;
+  position            : absolute;
+  top                 : 34px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-9OSx2P {
+  background-color    : rgba(255,255,255,0);
+  height              : 27px;
+  left                : 6px;
+  position            : absolute;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : 42px;
+}
+.desktophd .path-qPJJxB {
+  background-color    : rgba(255,255,255,0);
+  height              : 60px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 54px;
+}
+.desktophd .contract-1-IuHJ1P {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 60px;
+  margin-left         : 306px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 60px;
+}
+.desktophd .iot4tunisisa-39dSma {
+  background-color    : rgba(255,255,255,0);
+  height              : 61px;
+  left                : 210px;
+  position            : absolute;
+  top                 : 188px;
+  transform           : rotate(0deg);
+  width               : 52px;
+}
+.desktophd .arrow-copy-x6FRAc {
+  background-color    : rgba(255,255,255,0);
+  height              : 42px;
+  left                : 1097px;
+  position            : absolute;
+  top                 : 906px;
+  transform           : rotate(-90deg);
+  width               : 28px;
+}
+.desktophd .rectangle-1xLByD {
+  background-color    : rgba(255,255,255,0);
+  height              : 151px;
+  left                : 1113px;
+  position            : absolute;
+  top                 : 497px;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .website-design-for-p-W9UQ2q {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 42.0px;
+  margin-top          : 30px;
+  min-height          : 84px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 756px;
+}
+.desktophd .website-design-for-p-FT54YL {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 80px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .get-your-opportunity-uMerOM {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 31.0px;
+  height              : auto;
+  letter-spacing      : 0.31px;
+  line-height         : 41.0px;
+  min-height          : 40px;
+  min-width           : 380px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .what-is-io-t4-tunisia-dV5o6Y {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  flex-shrink         : 0;
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 70.0px;
+  height              : auto;
+  letter-spacing      : 0.70px;
+  line-height         : 93.0px;
+  min-height          : 196px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 855px;
+}
+.desktophd .a14-XbAvZx {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 52px;
+  min-width           : 85px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .io-t4-tunisia-bootcamp-yxDcZp {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 287px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 195px;
+  transform           : rotate(0deg);
+  width               : 633px;
+}
+.desktophd .tuesday-05-august-2-SQxiwh {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 775px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 188px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .bitmap-jHS0sG {
+  background-color    : rgba(255,255,255,0);
+  height              : 246px;
+  left                : 200px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 224px;
+}
+.desktophd .a68690850-824583434609769-3421110812724142892-n-iHbY1u {
+  background-color    : rgba(255,255,255,0);
+  height              : 223px;
+  left                : 200px;
+  position            : absolute;
+  top                 : 246px;
+  transform           : rotate(0deg);
+  width               : 224px;
+}
+.desktophd .a67831972-157109125471282-4559078980828166750-n-w8tN7j {
+  background-color    : rgba(255,255,255,0);
+  height              : 436px;
+  left                : 424px;
+  position            : absolute;
+  top                 : 293px;
+  transform           : rotate(0deg);
+  width               : 654px;
+}
+.desktophd .a68709090-2407899326133559-3436044290450013788-n-9h3RDU {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 246px;
+  margin-left         : 0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 247px;
+}
+.desktophd .a67893009-654651571681516-5466693351716293891-n-gzkHsO {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 246px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 246px;
+}
+.desktophd .a68830412-101022584568587-4067998731776379361-n-PGYjCI {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 246px;
+  margin-left         : 0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 246px;
+}
+.desktophd .a2000-x8Jd59 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 133px;
+  min-height          : 52px;
+  min-width           : 138px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .a6-2mxsBj {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 80px;
+  min-height          : 52px;
+  min-width           : 63px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .a1200-lyP1x4 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  min-height          : 52px;
+  min-width           : 135px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-4-3skMxq {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 31px;
+  justify-content     : flex-start;
+  left                : 1342px;
+  min-width           : 352px;
+  position            : absolute;
+  top                 : 207px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .about-nlF4iG {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 31px;
+  min-width           : 80px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .speakers-chtikO {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 37px;
+  min-height          : 31px;
+  min-width           : 114px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .workshops-0Zm305 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-left         : 100px;
+  min-height          : 32px;
+  min-width           : 141px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .certificates-UWbt4j {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-left         : 78px;
+  min-height          : 32px;
+  min-width           : 141px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .mentoring-TAmtMw {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  margin-top          : 5px;
+  min-height          : 32px;
+  min-width           : 133px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .website-design-for-p-mWq8eX {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 42.0px;
+  margin-top          : 39px;
+  min-height          : 210px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 769px;
+}
+.desktophd .speakers-PYvEm7 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  min-height          : 32px;
+  min-width           : 118px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-3-aWG875 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-1@2x.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 63px;
+  justify-content     : flex-end;
+  left                : 1730px;
+  min-width           : 278px;
+  padding             : 15.0px 14.8px;
+  position            : absolute;
+  top                 : 192px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .get-your-opportunity-NS6V8V {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 31px;
+  min-width           : 255px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .schedule-HcGcfL {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 37px;
+  min-height          : 31px;
+  min-width           : 114px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .mentor-nations-tunis-p13x9C {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 775px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 226px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-7-xyCZfB {
+  align-items         : center;
+  background-color    : var(--auto-palette-color-6);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 1186px;
+  justify-content     : flex-end;
+  margin-top          : 0px;
+  min-width           : 1920px;
+  padding             : 0 113.8px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .rectangle-JXPSlf {
+  background-color    : var(--auto-palette-color-6);
+  height              : 106px;
+  left                : 152px;
+  position            : absolute;
+  top                 : 170px;
+  transform           : rotate(0deg);
+  width               : 1921px;
+}
+.desktophd .group-3-0KZAIi {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 88px;
+  justify-content     : flex-end;
+  left                : 878px;
+  min-width           : 468px;
+  padding             : 23.0px 47.7px;
+  position            : absolute;
+  top                 : 793px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .overlap-group1-w4xvAO {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 60px;
+  position            : relative;
+  width               : 47px;
+}
+.desktophd .auto-flex1-cvuMlb {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 32px;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex2-vmm21w {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin-top          : 15px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex28-6Qo0Ip {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 377px;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex27-pag7WH {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 100px;
+  position            : relative;
+  width               : 275px;
+}
+.desktophd .auto-flex21-R8wy4c {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 22px;
+  justify-content     : flex-start;
+  margin-top          : 14px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex22-xSM2cD {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 80px;
+  justify-content     : flex-start;
+  margin-top          : 8px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex17-7283HR {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 60px;
+  justify-content     : flex-start;
+  margin-top          : 32px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex16-0d6x41 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 80px;
+  justify-content     : flex-start;
+  margin-top          : 8px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex15-ZBjuHt {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 22px;
+  justify-content     : flex-start;
+  margin-top          : 14px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex20-rMrmm9 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 60px;
+  justify-content     : flex-start;
+  margin-top          : 32px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex18-ka71bb {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 22px;
+  justify-content     : flex-start;
+  margin-top          : 14px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex19-KslTxy {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 80px;
+  justify-content     : flex-start;
+  margin-top          : 8px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex-mikwn8 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 69px;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex3-P8ekKc {
+  align-items         : flex-start;
+  align-self          : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 738px;
+  position            : relative;
+  width               : 373px;
+}
+.desktophd .auto-flex4-7IboJ5 {
+  align-items         : flex-end;
+  align-self          : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 80px;
+  justify-content     : flex-start;
+  margin-right        : -2.24px;
+  margin-top          : 4px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex3-W1gTls {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-bottom       : 5.0px;
+  position            : relative;
+  width               : 14px;
+}
+.desktophd .auto-flex2-HFND18 {
+  align-items         : flex-start;
+  align-self          : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 2px;
+  margin-top          : 8.0px;
+  position            : relative;
+  width               : 9px;
+}
+.desktophd .overlap-group3-mLHivI {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 5px;
+  position            : relative;
+  width               : 5px;
+}
+.desktophd .auto-flex-4mTYbE {
+  align-items         : center;
+  align-self          : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-right        : 89.7px;
+  position            : relative;
+  width               : 1256px;
+}
+.desktophd .auto-flex-WDkgZ5 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 4px;
+  position            : relative;
+  width               : 5px;
+}
+.desktophd .auto-flex1-fPbwGp {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 245px;
+  justify-content     : flex-start;
+  margin-top          : 67px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .overlap-group1-rlEpp6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 69px;
+  margin-left         : 25px;
+  position            : relative;
+  width               : 777px;
+}
+.desktophd .auto-flex26-gD2qHK {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 377px;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .manel-marouani-skAJf3 {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(0,230,255,1.0);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 238px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .social-media-manager-IKuxye {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 206px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .oumayma-blel-ljJS3a {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(0,229,255,1.0);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 215px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .business-development-EEWEHx {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 195px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-xOWank {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .junior-full-stack-de-23prnZ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 238px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-b1fxlM {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 244px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .ahmed-ktata-mYP7xg {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 211px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .senior-java-script-de-oSE0cd {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 249px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-dh4AKD {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 340px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 243px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .med-zied-cherif-MCxGIx {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(0,230,255,1.0);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 230px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .co-program-manager-mXs497 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 194px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-7bRQsC {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .dhia-elhak-guedri-pFh6EC {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-7);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 260px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-ERgyTk {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 344px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 244px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .omnia-blel-Ah6iY1 {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(0,232,255,1.0);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 162px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-lodmEz {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .co-lead-tech-evangli-ZIcr1r {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 203px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-RCK4SK {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 684px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 243px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .co-program-manager-qUPnNL {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 194px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-i6Uzzr {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .adam-bhouri-xdKnxJ {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(0,233,255,1.0);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 191px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .data-analytist-2nkjia {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 130px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .farah-cherif-JwbUuf {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-7);
+  height              : auto;
+  left                : 14px;
+  line-height         : 33.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 250px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-6-6MoMnT {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-9.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 100px;
+  padding             : 8.0px 24.0px;
+  position            : absolute;
+  top                 : 244px;
+  transform           : rotate(0deg);
+  width               : 342px;
+}
+.desktophd .ahlem-jenhani-iTMqyo {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-7);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 214px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .mohamed-l-u2019abidi-HR20v8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-7);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 33.0px;
+  margin-bottom       : -1px;
+  min-height          : 32px;
+  min-width           : 268px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .data-scientist-kde7Ix {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -1px;
+  margin-top          : 10px;
+  min-height          : 24px;
+  min-width           : 125px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .auto-flex8-BQ2GxM {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 37.0px;
+  position            : relative;
+  width               : 855px;
+}
+.desktophd .auto-flex9-Pgexwm {
+  align-items         : center;
+  align-self          : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 975px;
+  justify-content     : flex-start;
+  margin-right        : -208.0px;
+  margin-top          : 0px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .overlap-group3-P9pGNo {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .overlap-group4-DnoI2F {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 134px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .overlap-group5-6vwp2G {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .auto-flex12-kJ2wRx {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 342px;
+  justify-content     : flex-start;
+  margin-left         : 135.0px;
+  margin-top          : 0px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex13-Ox9riK {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 344px;
+  justify-content     : flex-start;
+  margin-top          : 0px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex10-BBn7F2 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 342px;
+  justify-content     : flex-start;
+  margin-top          : 63px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex11-yvficO {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 342px;
+  justify-content     : flex-start;
+  margin-left         : 135.0px;
+  margin-top          : 0px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex2-MviLXk {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 33px;
+  position            : relative;
+  width               : 1078px;
+}
+.desktophd .auto-flex1-Oosyzm {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 246px;
+  justify-content     : flex-start;
+  margin-right        : 59.0px;
+  margin-top          : 0px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex-P8STTb {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 76px;
+  position            : relative;
+  width               : 125px;
+}
+.desktophd .auto-flex25-k8XdXn {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 100px;
+  position            : relative;
+  width               : 550px;
+}
+.desktophd .auto-flex4-B2fLxF {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : 855px;
+}
+.desktophd .overlap-group9-OVVJiC {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .overlap-group10-XkuAdB {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 136px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .overlap-group11-FO2ZeK {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 344px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 684px;
+}
+.desktophd .overlap-group8-R8V0gk {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 344px;
+  position            : relative;
+  width               : 1026px;
+}
+.desktophd .overlap-group7-XVUF2g {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .overlap-group6-qdWmRT {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .overlap-group14-PEYD6s {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 1186px;
+  position            : relative;
+  width               : 744px;
+}
+.desktophd .overlap-group1-LTgiAe {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 729px;
+  position            : relative;
+  width               : 1078px;
+}
+.desktophd .overlap-group12-xh8Xl7 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .overlap-group13-NnUNFw {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 342px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 342px;
+}
+.desktophd .auto-flex7-XoNOUR {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 89px;
+  justify-content     : flex-start;
+  margin-top          : 48px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex24-5fH98A {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : 550px;
+}
+.desktophd .auto-flex1-1xxfti {
+  align-items         : flex-start;
+  align-self          : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 2px;
+  margin-top          : 8.0px;
+  position            : relative;
+  width               : 9px;
+}
+.desktophd .auto-flex-ogTylz {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 9px;
+}
+.desktophd .overlap-group2-BPkGKm {
+  align-self          : flex-start;
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 1568px;
+  margin-left         : -747.0px;
+  margin-top          : 59px;
+  position            : relative;
+  width               : 3072px;
+}
+.desktophd .auto-flex3-7LOW6N {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 52px;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .auto-flex6-rNizUO {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : 550px;
+}
+.desktophd .auto-flex5-hBp2uI {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin-top          : 5px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .overlap-group-Y7zamN {
+  align-self          : flex-start;
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 1205px;
+  margin-left         : -153.0px;
+  margin-top          : -170px;
+  position            : relative;
+  width               : 2131px;
+}
+.desktophd .auto-flex23-vCh9ID {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 144px;
+  position            : relative;
+  width               : 756px;
+}
+.desktophd .auto-flex14-YTEkEp {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 60px;
+  justify-content     : flex-start;
+  margin-top          : 60px;
+  position            : relative;
+  width               : auto;
+}
+.desktophd .path-DbywRA {
+  background-color    : rgba(255,255,255,0);
+  height              : 4px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-nPTzvu {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 4px;
+  margin-left         : 3.0px;
+  margin-top          : 1px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-s4oIay {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-left         : 0px;
+  margin-top          : 3.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .shape-AdlqJg {
+  background-color    : rgba(255,255,255,0);
+  height              : 35px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 60px;
+}
+.desktophd .path-xxTocC {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 27px;
+  position            : absolute;
+  top                 : 52px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .rectangle-BqlaDq {
+  background-color    : rgba(0,0,0,0.3671875);
+  height              : 1186px;
+  left                : 0px;
+  opacity             : 0.75;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 744px;
+}
+.desktophd .interview-3-iTAedo {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 60px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 60px;
+}
+.desktophd .path-xdQEnl {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 40px;
+  position            : absolute;
+  top                 : 32px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .shape-x3zDKF {
+  background-color    : rgba(255,255,255,0);
+  height              : 31px;
+  left                : 16px;
+  position            : absolute;
+  top                 : 29px;
+  transform           : rotate(0deg);
+  width               : 29px;
+}
+.desktophd .screen-shot-2020-06-09-at-6-32-38-pm-JSfk7i {
+  background-color    : rgba(255,255,255,0);
+  height              : 1019px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 540px;
+  transform           : rotate(0deg);
+  width               : 3072px;
+}
+.desktophd .group-8-C2uz23 {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-3.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 747px;
+  padding             : 54.0px 155.0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 1920px;
+}
+.desktophd .shape-ChGdmj {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 31px;
+  margin-left         : 6px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 27px;
+}
+.desktophd .path-cylBrw {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 39px;
+  margin-bottom       : 1.0px;
+  margin-left         : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 21px;
+}
+.desktophd .shape-xhC7bt {
+  align-self          : flex-start;
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 43px;
+  margin-left         : 4px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.desktophd .path-vaFk1K {
+  align-self          : center;
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 41px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 47px;
+}
+.desktophd .shape-OMeXMx {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 31px;
+  margin-bottom       : 1.0px;
+  margin-left         : 7px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 28px;
+}
+.desktophd .path-mq0qfj {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 30px;
+  margin-bottom       : 2.0px;
+  margin-left         : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 29px;
+}
+.desktophd .path-p2aTYW {
+  background-color    : rgba(255,255,255,0);
+  height              : 122px;
+  left                : 78px;
+  position            : absolute;
+  top                 : 62px;
+  transform           : rotate(0deg);
+  width               : 113px;
+}
+.desktophd .group-1f82UM {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 45px;
+  justify-content     : flex-end;
+  left                : 106px;
+  min-width           : 417px;
+  position            : absolute;
+  top                 : 96px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .path-oiWSex {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 41px;
+  margin-bottom       : 1.0px;
+  margin-left         : 6px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 37px;
+}
+.desktophd .path-x8EnvH {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 3px;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .path-GB6g6b {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 11px;
+  position            : absolute;
+  top                 : 39px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-DgS30l {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 11px;
+  position            : absolute;
+  top                 : 49px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .logo-u-s-embassy-tunis-71gtUA {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 245px;
+  margin-left         : 244px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 377px;
+}
+.desktophd .mentor-nations2x-tIOO2K {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 245px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 524px;
+}
+.desktophd .path-FwKjfo {
+  background-color    : rgba(255,255,255,0);
+  height              : 245px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 520px;
+}
+.desktophd .path-xjax07 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 39px;
+  margin-bottom       : 1.0px;
+  margin-left         : 4px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 21px;
+}
+.desktophd .shape-cyW2JQ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 31px;
+  margin-bottom       : 1.0px;
+  margin-left         : 3px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 32px;
+}
+.desktophd .path-WVC0xn {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 30px;
+  margin-bottom       : 1.0px;
+  margin-left         : 6px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 19px;
+}
+.desktophd .shape-8Y7LDH {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 31px;
+  margin-left         : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 32px;
+}
+.desktophd .path-bVThLN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 30px;
+  margin-bottom       : 1.0px;
+  margin-left         : 6px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 29px;
+}
+.desktophd .path-g3b7DF {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 31px;
+  margin-left         : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.desktophd .website-design-for-p-fSisVn {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(137,137,137,1.0);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 42.0px;
+  margin-top          : 45px;
+  min-height          : 42px;
+  min-width           : 1266px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .sponsored-by-kDwhxx {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(48,48,48,1.0);
+  flex-shrink         : 0;
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 35.0px;
+  height              : auto;
+  letter-spacing      : 0.35px;
+  line-height         : 42.0px;
+  margin-left         : 0.05px;
+  min-height          : 42px;
+  min-width           : 278px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .path-nS11HM {
+  background-color    : rgba(255,255,255,0);
+  height              : 4px;
+  left                : 25px;
+  position            : absolute;
+  top                 : 4px;
+  transform           : rotate(0deg);
+  width               : 4px;
+}
+.desktophd .shape-tOCoI0 {
+  background-color    : rgba(255,255,255,0);
+  height              : 36px;
+  left                : 14px;
+  position            : absolute;
+  top                 : 13px;
+  transform           : rotate(0deg);
+  width               : 46px;
+}
+.desktophd .a21628475830-zVc2rL {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 29px;
+  min-height          : 31px;
+  min-width           : 189px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .facebook-1-bDCtwy {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 52px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 52px;
+}
+.desktophd .path-x0x8xv {
+  background-color    : rgba(255,255,255,0);
+  height              : 22px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 15px;
+  transform           : rotate(0deg);
+  width               : 13px;
+}
+.desktophd .at-fdaC2H {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-shape-28@2x.png");
+  background-size     : 100% 100%;
+  flex-shrink         : 0;
+  height              : 32px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 32px;
+}
+.desktophd .phone-call-PONSo6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 32px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 32px;
+}
+.desktophd .contact-us-0aUNf8 {
+  align-self          : center;
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : 4.0px;
+  margin-left         : 326px;
+  min-height          : 51px;
+  min-width           : 236px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .io-t4-tunisia-bootcamp-lZWw0L {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : 633px;
+}
+.desktophd .iot4tunisisa-0rjsx3 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 61px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 52px;
+}
+.desktophd .tuesday-05-august-2-dkjMaI {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 488px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .mentor-nations-tunis-0Uvsgf {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 488px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 38px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .contact-mentornation-R3CUDT {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 29px;
+  min-height          : 31px;
+  min-width           : 322px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .path-PkZBIT {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 17px;
+  position            : absolute;
+  top                 : 12px;
+  transform           : rotate(0deg);
+  width               : 7px;
+}
+.desktophd .path-BZflaN {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 28px;
+  position            : absolute;
+  top                 : 14px;
+  transform           : rotate(0deg);
+  width               : 5px;
+}
+.desktophd .path-W8Paio {
+  background-color    : rgba(255,255,255,0);
+  height              : 5px;
+  left                : 28px;
+  position            : absolute;
+  top                 : 29px;
+  transform           : rotate(0deg);
+  width               : 1px;
+}
+.desktophd .shape-nIhdVn {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 22px;
+  position            : absolute;
+  top                 : 14px;
+  transform           : rotate(0deg);
+  width               : 6px;
+}
+.desktophd .youtube-jcLR1F {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 52px;
+  margin-left         : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 52px;
+}
+.desktophd .shape-dwa1kQ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 24px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.desktophd .path-NChnvB {
+  background-color    : rgba(255,255,255,0);
+  height              : 16px;
+  left                : 16px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.desktophd .path-8qCQNe {
+  background-color    : rgba(255,255,255,0);
+  height              : 9px;
+  left                : 16px;
+  position            : absolute;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .oval-NN62Or {
+  background-color    : rgba(255,255,255,0);
+  height              : 5px;
+  left                : 15px;
+  position            : absolute;
+  top                 : 12px;
+  transform           : rotate(0deg);
+  width               : 5px;
+}
+.desktophd .group-12-Hrxlql {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-6);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 319px;
+  justify-content     : flex-start;
+  margin-left         : 2.0px;
+  margin-top          : 47px;
+  min-width           : 1920px;
+  padding             : 51.0px 184.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-11-aBijxx {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 1551px;
+}
+.desktophd .world-1-qsV8xx {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-shape-27@2x.png");
+  background-size     : 100% 100%;
+  flex-shrink         : 0;
+  height              : 52px;
+  margin-left         : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 52px;
+}
+.desktophd .shape-P51IKW {
+  background-color    : rgba(255,255,255,0);
+  height              : 52px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 52px;
+}
+.desktophd .instagram-zdhI6M {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-shape-22@2x.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 52px;
+  justify-content     : flex-start;
+  margin-left         : 28px;
+  padding             : 0 14.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .shape-lXEbhK {
+  background-color    : rgba(255,255,255,0);
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 32px;
+}
+.desktophd .shape-SQjFXH {
+  background-color    : rgba(255,255,255,0);
+  height              : 16px;
+  left                : 14px;
+  position            : absolute;
+  top                 : 23px;
+  transform           : rotate(0deg);
+  width               : 25px;
+}
+.desktophd .path-9QFeBs {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 33px;
+  position            : absolute;
+  top                 : 29px;
+  transform           : rotate(0deg);
+  width               : 1px;
+}
+.desktophd .shape-wDYM5S {
+  background-color    : rgba(255,255,255,0);
+  height              : 52px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 52px;
+}
+.desktophd .lastname-Z6hHbs {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 40.0px;
+  margin-bottom       : -1px;
+  min-height          : 39px;
+  min-width           : 141px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .age-KNqVn0 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 40.0px;
+  margin-bottom       : -1px;
+  min-height          : 39px;
+  min-width           : 70px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .mobile-sXyeXn {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 40.0px;
+  margin-bottom       : -1px;
+  margin-top          : 30px;
+  min-height          : 39px;
+  min-width           : 120px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .your-motivation-WsxzC8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 40.0px;
+  margin-bottom       : -1px;
+  margin-top          : 30px;
+  min-height          : 39px;
+  min-width           : 233px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .email-0P4WQt {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 40.0px;
+  margin-bottom       : -1px;
+  margin-top          : 30px;
+  min-height          : 39px;
+  min-width           : 88px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .span1-OgNMHJ {
+  letter-spacing      : 0.00px;
+}
+.desktophd .span2-OgNMHJ {
+  color               : rgba(254,255,254,1.0);
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  letter-spacing      : 0.00px;
+}
+.desktophd .shape-9tkdJG {
+  background-color    : rgba(255,255,255,0);
+  height              : 70px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 62px;
+}
+.desktophd .rectangle-IjEwea {
+  background-color    : rgba(51,51,51,1.0);
+  height              : 292px;
+  left                : 1562px;
+  position            : absolute;
+  top                 : 667px;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.desktophd .mentornations-cowork-OgNMHJ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  height              : auto;
+  left                : 1594px;
+  line-height         : 42.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 687px;
+  transform           : rotate(0deg);
+  width               : 226px;
+}
+.desktophd .subscribe-now-3gcL6p {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-5);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 2.6px;
+  margin-top          : 52px;
+  min-height          : 91px;
+  min-width           : 507px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .mentor-nations-xxcsqR {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 45.0px;
+  height              : auto;
+  left                : 3px;
+  letter-spacing      : 0.45px;
+  line-height         : 84.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .rectangle-MKBZvE {
+  background-color    : var(--auto-palette-color-1);
+  height              : 47px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 21px;
+  transform           : rotate(0deg);
+  width               : 375px;
+}
+.desktophd .co-lead-tech-evangli-ETF8FF {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 14px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 292px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .website-design-for-p-q6wHWV {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 42.0px;
+  margin-top          : 27.0px;
+  min-height          : 168px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 756px;
+}
+.desktophd .rectangle-IPZyWA {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 72px;
+  margin-top          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 275px;
+}
+.desktophd .rectangle-YN4k9N {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 6.0px;
+  flex-shrink         : 0;
+  height              : 72px;
+  margin-top          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 275px;
+}
+.desktophd .firstname-VgfLKs {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 40.0px;
+  margin-bottom       : -1px;
+  min-height          : 39px;
+  min-width           : 144px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .oval-bUCa24 {
+  background-color    : rgba(255,255,255,0);
+  height              : 37px;
+  left                : 12px;
+  position            : absolute;
+  top                 : 12px;
+  transform           : rotate(0deg);
+  width               : 37px;
+}
+.desktophd .location-8G6TxT {
+  background-color    : rgba(255,255,255,0);
+  height              : 70px;
+  left                : 1676px;
+  position            : absolute;
+  top                 : 978px;
+  transform           : rotate(0deg);
+  width               : 62px;
+}
+.desktophd .region-MoTOdw {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : auto;
+  line-height         : 40.0px;
+  margin-bottom       : -1px;
+  margin-top          : 30px;
+  min-height          : 39px;
+  min-width           : 108px;
+  position            : relative;
+  text-align          : justify;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .rectangle-bxWxyp {
+  background-color    : rgba(41,61,184,0.3671875);
+  height              : 934px;
+  left                : -33px;
+  opacity             : 0.75;
+  position            : absolute;
+  top                 : -485px;
+  transform           : rotate(0deg);
+  width               : 2131px;
+}
+.desktophd .u201c-digital-literacy-is-8m8BNt {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 70.0px;
+  height              : auto;
+  left                : 964px;
+  letter-spacing      : 0.70px;
+  line-height         : 84.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 1309px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-9-HxYMmG {
+  background-color    : rgba(255,255,255,0);
+  height              : 84px;
+  left                : 2076px;
+  position            : absolute;
+  top                 : 1412px;
+  transform           : rotate(0deg);
+  width               : 375px;
+}
+.desktophd .group-3-iFKazk {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-rectangle-20.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 88px;
+  justify-content     : flex-end;
+  margin-left         : 1.0px;
+  margin-top          : 37px;
+  min-width           : 1583px;
+  padding             : 23.0px 730.7px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .submit-xxS4E6 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 31.0px;
+  height              : auto;
+  letter-spacing      : 0.31px;
+  line-height         : 41.0px;
+  min-height          : 40px;
+  min-width           : 129px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .group-10-DEVSSN {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 1.0px;
+  margin-top          : 68px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 1575px;
+}
+.desktophd .rectangle-x0bnSj {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 6.0px;
+  flex-shrink         : 0;
+  height              : 72px;
+  margin-top          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 550px;
+}
+.desktophd .rectangle-P2txID {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 6.0px;
+  flex-shrink         : 0;
+  height              : 72px;
+  margin-top          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 550px;
+}
+.desktophd .rectangle-f7BZMG {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 6.0px;
+  flex-shrink         : 0;
+  height              : 72px;
+  margin-top          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 550px;
+}
+.desktophd .rectangle-gYohDw {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 6.0px;
+  flex-shrink         : 0;
+  height              : 72px;
+  margin-top          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 550px;
+}
+.desktophd .rectangle-FQRrnJ {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 6.0px;
+  flex-shrink         : 0;
+  height              : 300px;
+  margin-top          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 1575px;
+}
+.desktophd .imageonline-co-grayscaledimage-mZ1qAP {
+  background-color    : rgba(255,255,255,0);
+  height              : 1207px;
+  left                : -40px;
+  position            : absolute;
+  top                 : -372px;
+  transform           : rotate(0deg);
+  width               : 1960px;
+}
+.desktophd .imageonline-co-grayscaledimage-pqLEDW {
+  background-color    : var(--auto-palette-color-6);
+  height              : 350px;
+  left                : 747px;
+  overflow            : hidden;
+  position            : absolute;
+  top                 : 1217px;
+  transform           : rotate(0deg);
+  width               : 1920px;
+}
+.desktophd .oval-xb0Npo {
+  background-color    : rgba(255,255,255,0);
+  height              : 13px;
+  left                : 24px;
+  position            : absolute;
+  top                 : 46px;
+  transform           : rotate(0deg);
+  width               : 13px;
+}
+.desktophd .group-Ho2qZs {
+  background-color    : rgba(255,255,255,0);
+  height              : 63px;
+  left                : 182px;
+  position            : absolute;
+  top                 : 184px;
+  transform           : rotate(0deg);
+  width               : 54px;
+}
+.desktophd .about-us-NyJ4Gr {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  height              : auto;
+  left                : 1210px;
+  line-height         : 40.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 216px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .span2-ZDRcIs {
+  font-family         : "Futura-Medium", Helvetica, Arial, serif;
+  letter-spacing      : 0.00px;
+}
+.desktophd .empower-youth-throug-3eMQH7 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 50.0px;
+  height              : auto;
+  left                : 1165px;
+  letter-spacing      : 0.50px;
+  line-height         : 84.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 479px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .tuesday-05-august-2-e4JVxj {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  height              : auto;
+  left                : 706px;
+  line-height         : 40.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 553px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .io-t4-tunisia-bootcamp-ZDRcIs {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-family         : "Futura-Bold", Helvetica, Arial, serif;
+  font-size           : 50.0px;
+  height              : auto;
+  left                : 498px;
+  letter-spacing      : 0.50px;
+  line-height         : 66.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 478px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .rectangle-p6bHfG {
+  background-color    : rgba(0,0,0,0.3671875);
+  height              : 934px;
+  left                : 0px;
+  opacity             : 0.75;
+  position            : absolute;
+  top                 : 271px;
+  transform           : rotate(0deg);
+  width               : 2131px;
+}
+.desktophd .a6-f2-a1732-ueIB6A {
+  background-color    : rgba(255,255,255,0);
+  height              : 1170px;
+  left                : 129px;
+  position            : absolute;
+  top                 : 35px;
+  transform           : rotate(0deg);
+  width               : 1967px;
+}
+.desktophd .span1-ZDRcIs {
+  letter-spacing      : 0.00px;
+}
+.desktophd .a6-f2-a1732-AM1cgt {
+  background-color    : rgba(255,255,255,0);
+  height              : 1205px;
+  left                : 90px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 2027px;
+}
+.desktophd {
+  align-items         : center;
+  background-color    : rgba(0,0,0,1.0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 7600px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1920.0px;
+}
+.desktophd .a55604043-1844282182343351-682267039712149504-o-ZCR40u {
+  background-color    : rgba(255,255,255,0);
+  height              : 318px;
+  left                : 413px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 480px;
+}
+.desktophd .img-8831-ExofRx {
+  background-color    : rgba(255,255,255,0);
+  height              : 261px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 468px;
+  transform           : rotate(0deg);
+  width               : 424px;
+}
+.desktophd .mentor-nations-tunis-cHXpQD {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  height              : auto;
+  left                : 742px;
+  line-height         : 40.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 602px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .mouse-clicker-gRlvaj {
+  background-color    : rgba(255,255,255,0);
+  height              : 106px;
+  left                : 1081px;
+  position            : absolute;
+  top                 : 981px;
+  transform           : rotate(180deg);
+  width               : 62px;
+}
+.desktophd .shape-Xlx93e {
+  background-color    : rgba(255,255,255,0);
+  height              : 105px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 62px;
+}
+.desktophd .path-U1TxHN {
+  background-color    : rgba(255,255,255,0);
+  height              : 5px;
+  left                : 26px;
+  position            : absolute;
+  top                 : 41px;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.desktophd .website-design-for-p-jOAdZ6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 22px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .website-design-for-p-9wI2p6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 87px;
+  min-height          : 80px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .website-design-for-p-QROOt2 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 87px;
+  min-height          : 22px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .group-5-HrVDEi {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/desktop-hd-shape-1@2x.png");
+  background-size     : 100% 100%;
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 60px;
+  justify-content     : flex-end;
+  min-width           : 60px;
+  padding             : 7.0px 5.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .path-0iIiDx {
+  align-self          : flex-start;
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-left         : 0px;
+  margin-top          : 8.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .interview-1-ELZeNz {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 60px;
+  margin-left         : 306px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 60px;
+}
+.desktophd .path-8A5Dao {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 26px;
+  position            : absolute;
+  top                 : 42px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .path-9t7gY4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 13px;
+  left                : 37px;
+  position            : absolute;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : 16px;
+}
+.desktophd .website-design-for-p-Qzwhle {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 22px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .website-design-for-p-9BiCx1 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 87px;
+  min-height          : 80px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .website-design-for-p-p2GuTD {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 87px;
+  min-height          : 22px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .path-rxdxLf {
+  background-color    : rgba(255,255,255,0);
+  height              : 2px;
+  left                : 33px;
+  position            : absolute;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .shape-A4EKnU {
+  background-color    : rgba(255,255,255,0);
+  height              : 54px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : 60px;
+}
+.desktophd .path-NdvOWR {
+  background-color    : rgba(255,255,255,0);
+  height              : 9px;
+  left                : 18px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .website-design-for-p-uVO4zi {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 80px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .website-design-for-p-EYV8bf {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 22px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .website-design-for-p-gagJ2s {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 80px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .shape-nAalND {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 9px;
+  margin-top          : 4px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .shape-zXQJ1u {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 9px;
+  margin-left         : 5.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .shape-nWxFcX {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 9px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .bitmap-zYLZzT {
+  background-color    : rgba(255,255,255,0);
+  height              : 1186px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 744px;
+}
+.desktophd .io-t4-tunisia-bootcamp-v3G1Xd {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  flex-shrink         : 0;
+  height              : auto;
+  min-height          : 182px;
+  min-width           : 722px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.desktophd .path-xxl0dM {
+  background-color    : rgba(255,255,255,0);
+  height              : 6px;
+  left                : 24px;
+  position            : absolute;
+  top                 : 17px;
+  transform           : rotate(0deg);
+  width               : 15px;
+}
+.desktophd .shape-I6pTcY {
+  background-color    : rgba(255,255,255,0);
+  height              : 60px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 67px;
+}
+.desktophd .path-fYqBnR {
+  background-color    : rgba(255,255,255,0);
+  height              : 3px;
+  left                : 47px;
+  position            : absolute;
+  top                 : 51px;
+  transform           : rotate(0deg);
+  width               : 3px;
+}
+.desktophd .career-mDQ3hj {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 60px;
+  margin-left         : 306px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 68px;
+}
+.desktophd .path-h9HUkz {
+  background-color    : rgba(255,255,255,0);
+  height              : 3px;
+  left                : 57px;
+  position            : absolute;
+  top                 : 22px;
+  transform           : rotate(0deg);
+  width               : 3px;
+}
+.desktophd .path-b1DyJN {
+  background-color    : rgba(255,255,255,0);
+  height              : 17px;
+  left                : 17px;
+  position            : absolute;
+  top                 : 25px;
+  transform           : rotate(0deg);
+  width               : 8px;
+}
+.desktophd .website-design-for-p-zICJ3d {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 87px;
+  min-height          : 80px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .website-design-for-p-kenyMu {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-left         : 87px;
+  min-height          : 22px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 278px;
+}
+.desktophd .path-N8CHnq {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 6px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 2px;
+}
+.desktophd .shape-Bqu5sz {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 9px;
+  margin-top          : 4px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .shape-5xRNd3 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 9px;
+  margin-top          : 4px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .shape-xfirVr {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 9px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .shape-eLVOjv {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 9px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.desktophd .path-wxsHEe {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 7px;
+  margin-right        : 5.0px;
+  margin-top          : 9px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
